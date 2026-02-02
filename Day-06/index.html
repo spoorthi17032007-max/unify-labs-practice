@@ -1,0 +1,108 @@
+<!-- 
+  DAY 6 PRACTICE LAB
+  Practice the concepts from today's video lecture below.
+-->
+<div id="root">
+    <div class="lab-container">
+        <h1>Lab <span>Session</span> {{ selectedDay }}</h1>
+        <p>Console is active. Use the <strong>JS Tab</strong> to practice logic.</p>
+        <div id="display" class="debug-panel">Waiting for JS input...</div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practice Console</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #020617;
+      padding: 28px;
+      border-radius: 12px;
+      width: 420px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 6px;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 14px;
+      color: #94a3b8;
+      margin-bottom: 15px;
+    }
+
+    .output {
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #020617;
+      border: 1px solid #1e293b;
+      border-radius: 6px;
+      min-height: 80px;
+      font-family: monospace;
+      color: #22c55e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 16px;
+      background-color: #38bdf8;
+      border: none;
+      border-radius: 6px;
+      color: #020617;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #0ea5e9;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="container">
+      <h1>Practice <span>Console</span></h1>
+      <p>Static layout with small interaction</p>
+
+      <!-- Output display -->
+      <div id="display" class="output">
+        Waiting for output...
+      </div>
+
+      <!-- Button added -->
+      <button onclick="showOutput()">Run</button>
+    </div>
+  </div>
+
+  <script>
+    function showOutput() {
+      document.getElementById("display").textContent =
+        "Hello! Your console is working 🚀";
+    }
+  </script>
+</body>
+</html>
